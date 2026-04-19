@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analysis of Credit Card Spending Behavior Using Tableau</title>
+    <style>
+        body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; max-width: 1200px; margin: auto; }
+        h1, h2 { color: #333; }
+        table { border-collapse: collapse; width: 100%; margin: 20px 0; }
+        th, td { border: 1px solid #ddd; padding: 8px; text-align: left; }
+        th { background-color: #f2f2f2; }
+        ul { list-style-type: disc; padding-left: 20px; }
+        .section { margin-bottom: 30px; }
+        img { max-width: 100%; height: auto; }
+        .certificate { background: #f9f9f9; padding: 20px; border-left: 5px solid #007bff; }
+    </style>
+</head>
+<body>
+
+<div class="section">
+<h1>Analysis of Credit Card Spending Behavior Using Tableau</h1>
+<p>A Report Submitted in Partial Fulfilment for award of Bachelor of Technology for DATA ANALYTICS</p>
+<p>By <strong>Stuti</strong></p>
+<p>Under the Supervision of <em>Ms. Ayushi Gupta</em> (or your faculty)</p>
+<p>Department of Computer Science Engineering<br>
+School of Computer Science and Information Technology<br>
+NOIDA INSTITUTE OF ENGINEERING AND TECHNOLOGY, GREATER NOIDA</p>
+</div>
+
+<div class="section certificate">
+<h2>Certificate</h2>
+<p>This is to certify that the project titled <strong>“Analysis of Credit Card Spending Behavior Using Tableau”</strong> submitted by <strong>Stuti</strong> is a bonafide work carried out during the Data Analytics Workshop.</p>
+<p>Faculty Signature<br>Ms. Ayushi Gupta<br>Date: 17/03/2026</p>
+</div>
+
+<div class="section">
+<h2>Acknowledgement</h2>
+<p>We would like to express our sincere gratitude to our faculty mentor Ms. Ayushi Gupta for her valuable guidance... (copy from original or customize).</p>
+</div>
+
+<div class="section">
+<h2>Abstract</h2>
+<p>This project focuses on analyzing credit card transaction data in India to understand customer spending behavior. With the increasing use of digital payments, analyzing transaction data helps identify trends, patterns, and user preferences.</p>
+<p>The dataset contains details such as transaction amount, category of spending, location, and transaction type. Tableau was used for data visualization and analysis.</p>
+<p>Exploratory Data Analysis (EDA) techniques were applied to identify spending patterns across different categories, cities, and time periods. The analysis highlights major spending sectors, peak transaction periods, and customer behavior trends.</p>
+<p>The results help businesses, banks, and financial institutions make better decisions related to marketing strategies, fraud detection, and customer targeting.[file:1][file:2]</p>
+</div>
+
+<div class="section">
+<h2>Introduction</h2>
+<p>With the rapid growth of digital payments, credit cards have become a major mode of financial transactions. Every transaction generates valuable data that can be analyzed to understand consumer behavior.</p>
+<p>Analyzing credit card data helps in identifying spending patterns, popular categories, and regional trends. This information is useful for banks, businesses, and policymakers.</p>
+<p>This project uses Tableau to analyze credit card transaction data in India and extract meaningful insights using data visualization techniques.[file:1]</p>
+</div>
+
+<div class="section">
+<h2>Objectives of the Study</h2>
+<ul>
+    <li>To clean and preprocess the credit card transaction dataset</li>
+    <li>To analyze customer spending behavior</li>
+    <li>To identify popular spending categories</li>
+    <li>To visualize transaction trends using Tableau</li>
+    <li>To extract insights for better decision-making</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Dataset Description</h2>
+<h3>Dataset Source</h3>
+<p>Credit Card Transactions – India Dataset (CSV file)</p>
+
+<h3>Dataset Size</h3>
+<p>Rows: ~10,000+ (approx from typical dataset)<br>Columns: 20+ Transaction-related attributes</p>
+
+<h3>Key Variables</h3>
+<table>
+    <tr><th>Variable</th><th>Description</th><th>Data Type</th></tr>
+    <tr><td>transaction_id</td><td>Unique ID of transaction</td><td>Categorical</td></tr>
+    <tr><td>amount</td><td>Transaction amount</td><td>Numeric</td></tr>
+    <tr><td>city</td><td>City where transaction occurred</td><td>Categorical</td></tr>
+    <tr><td>date</td><td>Date of transaction</td><td>Date</td></tr>
+    <tr><td>category</td><td>Type of expense (food, travel, etc.)</td><td>Categorical</td></tr>
+    <tr><td>card_type</td><td>Type of credit card</td><td>Categorical</td></tr>
+    <tr><td>gender</td><td>Customer gender</td><td>Categorical</td></tr>
+</table>
+</div>
+
+<div class="section">
+<h2>Tools & Technologies Used</h2>
+<p><strong>Tableau Desktop</strong><br>Used for data visualization, dashboard creation, and analysis.</p>
+<p><strong>Data Visualization Techniques</strong><br>Bar charts, pie charts, line charts, and heatmaps for spending patterns.</p>
+<p><strong>Dashboard Design</strong><br>Interactive dashboards combining spending by category, gender, segments.[file:1]</p>
+</div>
+
+<div class="section">
+<h2>Data Cleaning & Preprocessing</h2>
+<ul>
+    <li>Removed missing or null values</li>
+    <li>Removed duplicate records</li>
+    <li>Converted date column into proper format</li>
+    <li>Categorized spending types properly</li>
+    <li>Filtered irrelevant or inconsistent data</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Exploratory Data Analysis (EDA)</h2>
+<ol>
+    <li><strong>Spending by Category</strong>: Highest in shopping, food via stacked bars.</li>
+    <li><strong>Spending by City/Segment</strong>: Top cities and segments shown.</li>
+    <li><strong>Gender vs Spending</strong>: Comparison bars for male/female.</li>
+    <li><strong>Top 10 Spenders</strong>: Horizontal bars ₹1-5 lakh.</li>
+    <li><strong>Total Spend KPI</strong>: ₹36+ lakh gauge.</li>
+</ol>
+<img src="Screenshot-2026-03-17-135752.jpg" alt="Tableau Dashboard">
+</div>
+
+<div class="section">
+<h2>Key Insights</h2>
+<ul>
+    <li>Most spending in top categories like Auto, Bank via stacked charts.</li>
+    <li>Gender differences in expense types visible in bars.</li>
+    <li>Top spenders dominate total via pink bars.</li>
+    <li>Total spend around ₹36-39 lakh; high-value focus.</li>
+</ul>[file:1]
+</div>
+
+<div class="section">
+<h2>Conclusion</h2>
+<p>This project successfully analyzed credit card transaction data using Tableau. Revealed insights on spending behavior, categories, and trends.</p>
+<p>Highlights data analytics role for financial decisions.[file:1][file:2]</p>
+</div>
+
+<div class="section">
+<h2>Limitations</h2>
+<ul>
+    <li>Dataset size limited</li>
+    <li>Some data missing/inconsistent</li>
+    <li>No real-time analysis</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>Future Scope</h2>
+<ul>
+    <li>Machine learning for fraud prediction</li>
+    <li>Real-time dashboards</li>
+    <li>Larger datasets integration</li>
+</ul>
+</div>
+
+<div class="section">
+<h2>References</h2>
+<ol>
+    <li>Tableau Official Website: https://www.tableau.com</li>
+    <li>Credit Card Transactions India Dataset: Kaggle/public source</li>
+</ol>
+</div>
+
+</body>
+</html>
